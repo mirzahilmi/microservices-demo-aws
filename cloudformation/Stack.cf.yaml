@@ -419,10 +419,38 @@ Outputs:
     Description: ARN of the SNS Topic
     Value: !Ref OrderNotificationTopic
 
-  CheckoutServiceECRUri:
+  ECRCheckoutServiceUri:
     Description: ECR URI for CheckoutService
     Value: !GetAtt CheckoutServiceECR.RepositoryUri
 
-  PaymentServiceECRUri:
+  ECRPaymentServiceUri:
     Description: ECR URI for PaymentService
     Value: !GetAtt PaymentServiceECR.RepositoryUri
+
+  ECRCartServiceUri:
+    Description: ECR URI for CartService
+    Value: !GetAtt CartServiceECR.RepositoryUri
+
+  ECRCurrencyServiceUri:
+    Description: ECR URI for CurrencyService
+    Value: !GetAtt CurrencyServiceECR.RepositoryUri
+
+  ECREmailServiceUri:
+    Description: ECR URI for EmailService
+    Value: !GetAtt EmailServiceECR.RepositoryUri
+
+  ECRFrontendUri:
+    Description: ECR URI for Frontend
+    Value: !GetAtt FrontendECR.RepositoryUri
+
+  ECRLoadGeneratorUri:
+    Description: ECR URI for LoadGenerator
+    Value: !GetAtt LoadGeneratorECR.RepositoryUri
+
+  ECRProductCatalogServiceUri:
+    Description: ECR URI for ProductCatalogService
+    Value: !GetAtt ProductCatalogServiceECR.RepositoryUri
+
+  ECRShippingServiceUri:
+    Description: ECR URI for ShippingService
+    Value: !GetAtt ShippingServiceECR.RepositoryUri
