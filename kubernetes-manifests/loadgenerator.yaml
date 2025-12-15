@@ -77,7 +77,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: ghcr.io/mirzahilmi/microservices-demo-aws-loadgenerator:ec5a254c
+          image: 339713115679.dkr.ecr.us-east-1.amazonaws.com/loadgenerator:latest
           env:
             - name: FRONTEND_ADDR
               value: "frontend:80"
