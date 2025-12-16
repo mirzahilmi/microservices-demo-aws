@@ -44,7 +44,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: ghcr.io/mirzahilmi/microservices-demo-aws-frontend:ec5a254c
+          image: 339713115679.dkr.ecr.us-east-1.amazonaws.com/frontend:latest
           ports:
             - containerPort: 8080
           readinessProbe:
