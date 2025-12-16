@@ -191,15 +191,15 @@ Resources:
           Value: paymentservice
 
   # ECR Repository for Adservice
-  # AdserviceECR:
-  #   Type: AWS::ECR::Repository
-  #   Properties:
-  #     RepositoryName: adservice
-  #     ImageScanningConfiguration:
-  #       ScanOnPush: true
-  #     Tags:
-  #       - Key: Service
-  #         Value: adservice
+  AdserviceECR:
+    Type: AWS::ECR::Repository
+    Properties:
+      RepositoryName: adservice
+      ImageScanningConfiguration:
+        ScanOnPush: true
+      Tags:
+        - Key: Service
+          Value: adservice
 
   # ECR Repository for CartService
   CartServiceECR:
@@ -267,16 +267,16 @@ Resources:
         - Key: Service
           Value: productcatalogservice
 
-  #ECR Repository for RecommendationService
-  # RecommendationServiceECR:
-  #   Type: AWS::ECR::Repository
-  #   Properties:
-  #     RepositoryName: recommendationservice
-  #     ImageScanningConfiguration:
-  #       ScanOnPush: true
-  #     Tags:
-  #       - Key: Service
-  #         Value: recommendationservice
+  # ECR Repository for RecommendationService
+  RecommendationServiceECR:
+    Type: AWS::ECR::Repository
+    Properties:
+      RepositoryName: recommendationservice
+      ImageScanningConfiguration:
+        ScanOnPush: true
+      Tags:
+        - Key: Service
+          Value: recommendationservice
 
   # ECR Repository for ShippingService
   ShippingServiceECR:
